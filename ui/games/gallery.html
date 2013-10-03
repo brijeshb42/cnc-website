@@ -1,0 +1,24 @@
+<section id="gallery">
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+				<h2 class="section-title">CnC <span>Gallery</span></h2>
+				<div class="row">	
+				    <ul class="unstyled thumbnails row gallery" >
+				    	<repeat group="{{ @img }}" value="{{ @image }}">
+				    		<check if="{{@image!='.' && @image!='..'}}">
+				    		<true>
+    						<li class="span3">
+								<a href="img/gallery/{{@image}}" class="swipebox magnifier" title ="" style="display:block;text-align:center;">
+									<img width="270" height="270" src="img/gallery/{{@image}}" class="img-circle" alt="img/gallery-13" />
+								</a>
+							</li>
+							</true>
+							</check>
+						</repeat>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
